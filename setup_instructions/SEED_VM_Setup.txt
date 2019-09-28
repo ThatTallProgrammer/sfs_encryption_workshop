@@ -1,0 +1,12 @@
+1. Download the Seed Lab Ubuntu 16.04 virtual machine zip from 
+	- seedsecuritylabs.org/lab_env.html
+2. Unzip the archive
+3. Open Virtual Box
+4. Create new virtual machine 
+5. When asked if you would like to create a new virtual hard disk, select 
+	- Use an existing virutal hard disk
+6. Select the file icon to open the file browser
+7. Navigate to where you unzipped the archive and select 
+	- SEEDUbuntu-16.04-32bit.vmdk
+8. Hit create
+9. Select the newly created virtual machine in the Virtual Box home screen
