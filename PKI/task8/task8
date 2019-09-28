@@ -1,0 +1,10 @@
+#!/bin/bash
+
+printf "\n\nCreating SHA256 Hash\n\n"
+openssl dgst -sha256 message.txt > message.sha256
+
+printf "\n\nSigning Message\n\n"
+openssl rsautl -sign -in message.txt -inkey private.key -keyform PEM -in message.sha256 > signed_message
+
+printf "\n\nVerifying Signature\n\n"
+openssl rsautl -verify -in signed_message -inkey private.key

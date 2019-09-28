@@ -1,0 +1,3 @@
+#!/bin/bash
+
+openssl rsautl -encrypt -inkey public.key -pubin -in message.txt -out message.txt.enc
